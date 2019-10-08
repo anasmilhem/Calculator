@@ -24,6 +24,13 @@ button{
 
 #screen{
     text-align: right;
-    border: 1px solid red;
-    width: 100%;
+    border: 2px solid black;
+    width: 90%;
+    height: 40px;
+    font-size: 30px;
+    margin-left: 1%;
+}
+
+#clear{
+    width: 90%;
 }
