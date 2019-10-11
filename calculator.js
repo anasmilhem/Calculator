@@ -14,7 +14,7 @@ var display = document.querySelector("#display");
 for(var i = 0; i < buttons.length; i++){
     buttons[i].addEventListener("click", function(){
         if(this.textContent !== "="){
-            display.textContent += this.textContent + " ";
+            display.textContent += this.textContent;
         }
     });
 }
