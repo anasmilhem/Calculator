@@ -10,28 +10,32 @@
 <body>
     <h1>My Calculator</h1>
     
-    <div id = "container">
-        <div id="screen"><span id="display"></span></div>
-        <button class = "buttons">0</button>
+    <div class = "container">
+        <div id="output">
+            <div id="previousOutput">0</div>
+            <div id="currentOutput">0</div>
+        </div>
+        <button class= "buttons span-two" data-action= "clear">CE</button>
+        <button class= "buttons" data-action="delete">Del</button>
+        <button class = "buttons" data-action = "divide">/</button>
         <button class = "buttons">1</button>
         <button class = "buttons">2</button>
-        <button id="addition" class="buttons">+</button>
         <button class = "buttons">3</button>
+        <button class = "buttons" data-action = "add">+</button>
         <button class = "buttons">4</button>
         <button class = "buttons">5</button>
-        <button id="subtraction" class="buttons">-</button>
         <button class = "buttons">6</button>
+        <button class = "buttons" data-action="subtract">-</button>
         <button class = "buttons">7</button>
         <button class = "buttons">8</button>
-        <button id="multiplication" class="buttons">*</button>
         <button class = "buttons">9</button>
-        <button id="decimal" class="buttons">.</button>
-        <button id="equal" class="buttons">=</button>
-        <button id="division" class="buttons">/</button>
-        <button id="clear" class="buttons">CE</button>
+        <button class = "buttons" data-action="multiply">*</button>
+        <button class = "buttons">0</button>
+        <button class = "buttons">.</button>
+        <button class="buttons span-two" data-action= "equal">=</button>
     </div>
 
 
-    <script type="text/javascript" src="calculator.js"></script>
+    <script type="text/javascript" src="calculator2.js"></script>
 </body>
 </html>
