@@ -49,7 +49,7 @@ function calculate(numString){
     var pairTotal = 0;
     var i = 0;
     while(i < numArr.length){
-        if(numArr[i] === "+" || numArr[i] === "-" || numArr[i] === "*"  ||numArr[i] === "/" ){
+        if(numArr[i] === "+" || numArr[i] === "-" || numArr[i] === "*" || numArr[i] === "/" ){
             if(numArr[i] === "+"){
                pairTotal = parseFloat(numArr[i-1]) + parseFloat(numArr[i+1]);
                numArr.shift();
@@ -88,7 +88,13 @@ function calculate(numString){
     return pairTotal;
 }
 
-function calculate2()
+function stringToArray(numString){
+    var numArr = numString.split(' ');
+    if(numArr.length % 2 !== 0){
+        
+    }
+    
+}
 
 
 
